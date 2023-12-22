@@ -1,0 +1,2 @@
+Hello, welcome to my blog. In fact this is not my first repository I have ever created, many have been deleted for some issuees. Leaving that aside, I created this blog as a personal blog
+which has some small detailed information including videos, images and some background music. I have made this clear, it is a personal blog and whoever is interested in it please you can thank me in my contact us link. Thnak you. We are the Daphras
