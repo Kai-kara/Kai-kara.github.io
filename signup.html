@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Daphra Blog/signup</title>
+            <link rel="stylesheet" href="index.css">
+            <link rel="shortcut icon" href="Daphine.jpg" type="image/x-icon">
+            <audio autoplay loop src="Tyler Water.mp4"></audio>
+        </head>
+        <body>
+          
+        <script>
+            var pass = document.getElementById("password");
+            var msg = document.getElementById("message");
+            var str = document.getElementById("strength");
+
+            pass.addEventListener('input', () => {
+                if(pass.value.length > 0){
+                    msg.style.display = "block";
+                }
+                else{
+                    msg.style.display = "none";
+                }
+                if(pass.value.length < 4){
+                    str.innerHTML = "weak";
+                    pass.style.borderColor = "#ff5929";
+                    msg.style.color = "#ff5929";
+                }
+                else if(pass.value.length >= 4 && pass.value.length < 8){
+                    str.innerHTML = "medium";
+                    pass.style.borderColor = "yellow";
+                    msg.style.color = "yellow";
+                }
+                else if(pass.value.length >= 8){
+                    str.innerHTML = "strong";
+                    pass.style.borderColor = "#green";
+                    msg.style.color = "green";
+                }
+            })
+
+        </script>
+
+        <script>
+                function myfunc(event){
+        event.preventDefault();
+
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        if(email.length < 1 && password.length < 1){
+            window.alert("Fill email and password fields!");
+        }
+        else{        
+            window.alert("Thanks for signing up")
+            window.alert("Email: " + email);
+            window.alert("Password: " + password);
+        }
+
+        localStorage.setItem("Signup Email:", email); 
+        localStorage.setItem("Signup Password:", password);
+
+        document.getElementById("email").value = null;
+        document.getElementById("password").value = null;
+
+    }
+        </script>
+        
+            <div id="container">
+                <img id="fimage" src="Daphine.jpg" alt="image">
+                <b id="kara">Karaman</b>
+                <h1 id="owner">Daphra Karakai</h1> 
+                <div id="links"><a id="link" href="images.html">Back to blog</a></div>
+            </div>
+                <div id="content2">
+                
+                    <center>
+                        <b id="fill">Signup</b> 
+                        <form onsubmit="myfunc(event)" id="membership" action="images.html" method="get" name="membership">
+                            <b>Email</b> <br>
+                            <input type="email" name="email" id="email" placeholder="email or phone"> <br>
+                            <b>Password</b> <br>
+                            <input type="password" name="password" id="password" placeholder="password"> <br> <br>
+                            <input id="submit" type="submit" value="submit" onclick="" >
+                            <p id="message">Password is <span id="strength"></span> </p>
+                        </form>
+                    </center>
+
+                    
+                    <div id="sin"><img title="Drag and drop in new tab to view picture" id="layer" src="daphra._pic.jpg" alt="image"></div>
+                </div>
+        
+            <div id="footer"> <br>
+                <img id="fimage" src="Daphine.jpg" alt="image">
+                <center><b>All rights reserved &copy; Daphra Blog/. blog licences are neccesary before copy <br>
+                Seek permission from our copyright link </b> 
+        
+                <br>
+                <a href="copyright.html">&copy;Copyright</a> <br>
+
+                <div id="admin">
+                    <b><a title="Administrator page" href="admin.html">Administrator</a></b>
+                </div>
+
+                <div id="cont">
+                    <label for="email">Email:</label>
+                   <b>karamankaira@gmail.com</b>
+                   <label for="contact">Contact us</label>
+                    <a href="contact.html">Contact us</a>
+                </div>
+            </div>
+        </body>
+        </html>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

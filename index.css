@@ -1,0 +1,494 @@
+body{
+    background: springgreen;
+}
+
+#video{
+    border: 1px solid white;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#video:hover{
+    border: 2.5px solid red;
+    display: inline-block;
+}
+
+#videos{
+    border: 1px solid white;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 300px;
+}
+
+#videos:hover{
+    border: 2.5px solid red;
+    display: inline-block;
+}
+
+::placeholder{
+    background: transparent;
+    padding: 1px;
+    color: yellowgreen;
+}
+
+#message{
+    color: #fff;
+    display: none;
+}
+
+
+#container{
+    position: relative;
+    background-color: aquamarine;
+    width: auto;
+    height: 150px;
+    font-size: 25px;
+    color: brown;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    letter-spacing: 2px;
+}
+#container, h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 10px;
+}
+#join{
+    margin-left: 80px;
+}
+
+#joinedit{
+    background: whitesmoke;
+    padding: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    background: teal;
+    color: wheat;
+}
+
+#joinedit:hover{
+    color: maroon;
+    border-radius: 20px;
+}
+
+#membership{
+    margin-bottom: 100px;
+    background-color: lightblue;
+    margin-left: 400px;
+    margin-right: 400px;
+    border-radius: 30px;
+}
+
+#links{
+    margin-left: 100px;
+}
+
+#admin{
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    background: #b99999;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 25px;
+}
+
+#admin:hover{
+    background: none;
+    border: 2px solid magenta;
+}
+
+#admin, b, a{
+    text-decoration: none;
+}
+
+#link{
+    background: #b99999;
+    border-radius: 30px;
+    padding: 6px;
+    text-decoration: none;
+}
+
+
+#link:hover{
+    background: none;
+    border: 2px solid maroon;
+}
+#kara{
+    background: lightblue;
+    float: right;
+    margin-right: 200px;
+    margin-top: 20px;
+    transform: skewX(-20deg);
+    transform: skewy(-20deg);
+    border-radius: 30px;
+    border: 2px solid snow;
+}
+#kara:hover{
+    border: 2px solid sandybrown;
+    color: white;
+}
+
+#warn{
+    border-radius: 20px;
+    margin-left: 400px;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#warn:hover{
+    cursor: pointer;
+    border: 2px solid magenta;
+    background: none;
+    color: red;
+}
+
+#content{
+    margin-top: 0px;
+    margin-left: 66px;
+    width: 1100px;
+    height: 500px;
+    background: aqua;
+}
+
+#content1{
+    margin-top: 0px;
+    margin-left: 66px;
+    width: 1100px;
+    height: 500px;
+    background:url("daphra._pic.jpg");
+}
+
+#content2{
+    margin-top: 0px;
+    margin-left: 66px;
+    width: 1100px;
+    height: 500px;
+    background:url("logo.jpg");
+}
+
+#image{
+    width: 150px;
+    border: 1px solid lightblue;
+}
+#image:hover{
+    width: 151px;
+    border-radius: 5px;
+    cursor:grab;
+    padding: 3px;
+    background-color: lightcyan;
+}
+
+#image2{
+    height: 150px;
+    border: 1px solid lightblue;
+}
+#image2:hover{
+    height: 151px;
+    border-radius: 5px;
+    cursor:grab;
+    padding: 3px;
+    background-color: lightcyan;
+}
+#footer{
+    background-color: aquamarine;
+    width: auto;
+    height: 134px; 
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    color: brown;
+}
+#pics{
+    margin-left: 55px;
+    border-style: hidden;
+    border: hidden;
+}
+#fimage{
+    float: right;
+    width: 100px;
+    margin-right: 65px;
+    border-radius: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+#fimage:hover{
+    cursor: not-allowed;
+}
+#welcome{
+    font-size: 30px;
+    color: firebrick;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#real{
+    float: right;
+    border-radius: 60px;
+    margin-right: 30px;
+    border: 8px solid lightblue;
+}
+#real:hover{
+    border-radius: 0px;
+    transform: skewx(2deg);
+    padding: 8px;
+    cursor: grab;
+}
+
+#real3{
+    float: right;
+    border-radius: 60px;
+    margin-right: 30px;
+    border: 8px solid lightblue;
+}
+#real3:hover{
+    border-radius: 0px;
+    padding: 0px;
+    border: 2px solid blue;
+    cursor: grab;
+}
+
+#real2{
+    float: left;
+    border-radius: 30px;
+    border: 5px solid lightblue;
+    margin-left: 8px;
+}
+#real2:hover{
+    cursor: grab;
+    padding: 8px;
+    transform: skewx(-2deg);
+    border-radius: 0px;
+}
+
+#iconkarrel{
+    width: 77px;
+    border: 2px solid lightblue;
+    animation: myin 5s infinite;
+}
+
+@keyframes myin{
+    40%{transform: rotatey(60deg);}
+}
+#iconkarrel:hover{
+    cursor: grab;
+    animation: mystop 5s infinite;
+    padding: 5px;
+}
+
+@keyframes mystop{
+    50%{transform: rotate(0deg);}
+}
+
+#excite{
+    color: maroon;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#fun{
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: darkolivegreen;
+}
+#data{
+    background: dodgerblue;
+    width: 200px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+#fill{
+    color: forestgreen;
+    font-size: 30px;
+}
+#cont{
+    background: white;
+    margin-left: 430px;
+    margin-right: 590px;
+    padding: 5px;
+    border-radius: 30px;
+}
+#cont:hover{
+    border-radius: 10px;
+    color: black;
+}
+
+#membership{
+    color: black;
+    padding: 8px;
+    border: 5px solid maroon;
+}
+
+#member{
+    float: right;
+    position: absolute;
+    background: dodgerblue;
+    padding: 30px;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    margin-top: 50px; 
+}
+#member:hover{
+    border: 5px solid lightblue;
+    border-radius: 60px;
+    cursor: zoom-out;
+    font-size: 16px;
+}
+#info{
+    float: left;
+    position: absolute;
+    background: dodgerblue;
+    padding: 30px;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 735px;
+    margin-top: 50px; 
+}
+#info:hover{
+    border: 5px solid lightblue;
+    border-radius: 60px;
+    cursor: zoom-out;
+    font-size: 16px;
+}
+#layer{
+    width: 300px;
+    position: absolute;
+    margin-left: 400px;
+    border: 2px solid burlywood;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#sin{
+    animation: mysine 8s infinite;
+}
+
+@keyframes mysine{
+    30%{transform: rotateY(360deg);}
+}
+
+#layer:hover{
+    cursor: grab;
+    padding: 5px;
+}
+#layer2{
+    width: 300px;
+    position: absolute;
+    margin-left: 10px;
+    border: 2px solid burlywood;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+#layer2:hover{
+    cursor: grab;
+    padding: 5px;
+}
+#layer3{
+    width: 300px;
+    position: absolute;
+    margin-left: 785px;
+    border-color: red;
+    border: 2px solid burlywood;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+#layer3:hover{
+    cursor: grab;
+    padding: 5px;
+}
+#owner{
+    text-decoration: underline;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+}
+#my{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px solid maroon;
+    border-radius: 10px;
+    background-color: white;
+    color: orange;
+    margin-left: 0px;
+}
+#bkarrel{
+    float: right;
+    width: 200px;
+    border-radius: 30px;
+    border: 5px solid lightblue;
+}
+#bkarrel:hover{
+    border-radius: 0px;
+    padding: 5px;
+    cursor: grab;
+}
+#hashtag{
+    color: green;
+    transform: skewX(10deg);
+    text-decoration: underline;
+    font-family: sans-serif;
+    background:url("Daphine.jpg");
+    background-repeat: no-repeat;
+}
+#tags{
+    font-family: sans-serif;
+    color: white;
+    background: gray;
+}
+#tagcenter{
+    background:url("daphra.jalo.jpg");
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    margin-left: 30px;
+    padding-left: 30px;
+}
+#submit{
+    border-radius: 30px;
+    background: white;
+    color: green;
+    font-size: 14px;
+}
+#submit:hover{
+    cursor: pointer;
+    background: #b99999;
+    color: white;
+}
+
+#chek{
+    float: right;
+    margin-top: 180px;
+    margin-right: 490px;
+    border-radius: 30px;
+    padding: 10px;
+    background: transparent;
+    animation: myrotate 5s infinite;
+    border: 2px solid magenta;
+    background: white;
+    cursor: pointer;
+    animation: myrotate 5s infinite;
+}
+
+@keyframes myrotate{
+    40%{transform: rotatez(-5deg);}
+    20%{transform: rotatez(5deg);}
+}
+
+#chek:hover{
+    border: 2px dotted magenta;
+
+}
+
+#vidy{
+    margin-left: 20px;
+}
+#vidycol{
+    color: green;
+    font-size: 30px;
+    background:url("Daphine.jpg");
+    text-decoration: underline;
+}
+#copy{
+    font-size: 25px;
+}

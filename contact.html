@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daphra Blog/contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="container">
+        <form action="mailto:karamankaira@gmail.com" method="post" enctype="text/plain">
+            <h3>GET IN TOUCH</h3> 
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email Id" required>
+            <input type="text" id="phone" placeholder="Phone no." required>
+            <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+            <button onclick="hello()" type="submit">Send</button> <h4><a href="images.html">Back to blog</a></h4>
+        </form>
+    </div>
+
+    <script>
+        function hello(){
+            window.alert("Message sent!")
+        }
+    </script>
+
+    <script id=" https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+
+        function sendEmail(){
+            Email.send({
+                SecureToken : "18c6b87a-2050-48bd-be40-34a523ac9178",
+                To : 'karamankaira@gmail.com',
+                From : "karadaphra@gmail.com",
+                Subject : "This is the subject",
+                Body : "And this is the body",
+            }).then(
+            message => alert(message)
+            );
+            ///onsubmit="sendEmail(); reset(); return false;"
+        }
+    </script>
+</body>
+</html>

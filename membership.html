@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daphra Blog/membership</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="Daphine.jpg" type="image/x-icon">
+    <audio autoplay loop src="Alan x Walkers - Unity.mp3"></audio>
+</head>
+<body>
+  
+<script>
+    function collect(){
+        event.preventDefault();
+
+        var em = document.getElementById("email").value;
+        var pass = document.getElementById("password").value;
+
+        greet = prompt("Welcome to Daphine Rahman site aka Daphra, your name please");
+        if(greet.length < 1){
+            window.alert("Your membership wasn't created successfully. Missing name!");
+            
+            if(greet.length < 1){
+                while(greet.length < 1){
+                    greet = prompt("Re-enter your name to continue please!");
+                }
+            }
+            window.alert("Welcome " + greet);
+        }
+        else{
+            window.alert("Welcome " + greet);
+        }
+
+        document.getElementById("email").value = null;
+        document.getElementById("password").value = null;
+    }
+</script>
+
+<script>
+    function myfunc(event){
+        event.preventDefault();
+
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        localStorage.setItem("Email:", email);
+        localStorage.setItem("Password:", password);
+    }
+</script>
+
+    <script>
+        function reward(){
+            say = "Welcome to my blog, my name is Daphine Kaira Kai Kaitesi and I am so delighted to be with you now. My developer is Kigenyi Abdul Rahman the person who's in position of putting my blog together. Please enjoy your stay with some cool background music and nice videos, more well oraganised blogs of mine are coming so, check out for updates. Thank you!";
+            window.alert(say);
+        }
+    </script>
+
+    <div id="container">
+        <img id="fimage" src="Daphine.jpg" alt="image">
+        <b id="kara">Karaman</b>
+        <h1 id="owner">Daphra Karakai</h1> <b id="join"> <a id="joinedit" href="signup.html">SignUp</a> <a id="joinedit" href="login.html">LogIn</a> </b>
+        <b id="links"> <a id="link" href="index.html">Home</a> <a id="link" href="images.html">Images</a> <a id="link" href="lifestyle.html">Lifestyle</a> <a id="link" href="video.html">Video</a> <a id="link" href="membership.html">Membership</a></b>
+    </div>
+    <div id="content">
+        <div id="info">
+            <b>Cross check your email and password, <br> for privacy and <br> account security! </b>
+        </div>
+        <div id="member">
+            <b>All your membership information is <br> private and regulated  by the <br> Daphra Blog community rules.</b>
+            
+        </div>
+            <center>
+                <b id="fill">Dear, user fill this form</b> 
+                <form onsubmit="myfunc(event)" id="membership" action="index.html" method="get" name="membership">
+                    <b>Email</b> <br>
+                    <input type="email" name="email" id="email" placeholder="email or phone"> <br>
+                    <b>Password</b> <br>
+                    <input type="password" name="password" id="password" placeholder="password"> <br>
+                    <input id="submit" type="submit" value="submit" onclick="collect()">
+                </form>
+            </center>
+
+        <img title="Drag and drop in new tab to view picture" id="layer" src="daphra._pic.jpg" alt="image">
+        <img title="Drag and drop in new tab to view picture" id="layer2" src="daphra.-pic.jpg" alt="image">
+        <button onclick="reward()" id="chek" type="button">Read Daphine!</button>
+        <img title="Drag and drop in new tab to view picture" id="layer3" src="daphra.-pic.jpg" alt="image">
+    </div>
+
+    <div id="footer"> <br>
+        <img id="fimage" src="Daphine.jpg" alt="image">
+        <center><b>All rights reserved &copy; Daphra Blog/. blog licences are neccesary before copy <br>
+        Seek permission from our copyright link </b> 
+
+        <br>
+        <a href="copyright.html">&copy;Copyright</a> <br>
+
+        <div id="admin">
+            <b><a title="Administrator page" href="admin.html">Administrator</a></b>
+        </div>
+
+        <div id="cont">
+            <label for="email">Email:</label>
+           <b>karamankaira@gmail.com</b> 
+           <label for="contact">Contact us</label>
+           <a href="contact.html">Contact us</a>
+        </div>
+    </div>
+</body>
+</html>
